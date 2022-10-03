@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface UserRepository extends CrudRepository<Person, Long> {
 
     /*
-    User has books - book - started - comited status - other logic
+    User has books - book - started - committed status - other logic
     User has books - book - in progress
     User has books - book - finished
      */
