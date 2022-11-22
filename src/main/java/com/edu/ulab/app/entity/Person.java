@@ -16,7 +16,7 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence")
     @SequenceGenerator(name = "sequence", sequenceName = "sequence", allocationSize = 100)
-    private Integer id;
+    private Long id;
 
     @Column(nullable = false)
     private String fullName;
@@ -27,8 +27,8 @@ public class Person {
     @Column(nullable = false)
     private int age;
 
-//    @Column(nullable = false)
-//    private int count;
+    @Column(nullable = false)
+    private String gender;
 
     @OneToMany(mappedBy = "person", cascade = {
             CascadeType.MERGE,

@@ -8,4 +8,5 @@ public class UserDto {
     private String fullName;
     private String title;
     private int age;
+    private String gender;
 }
